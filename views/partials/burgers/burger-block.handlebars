@@ -1,0 +1,12 @@
+<li class="card-body">
+	<div class="card-text">
+		{{name}}
+	</div> 
+	{{#unless devour}}
+	<button class="change-devour card-text" data-id="{{id}}" data-newdevour="{{devour}}">
+		Devour it!
+	</button>
+	{{/unless}}
+
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+</li>
